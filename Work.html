@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
+<script type="text/javascript">
+  function openTab(th)
+  {
+      window.open(th.name,'_blank');
+  }
+</script>
+
+<!-- Portfolio - Header Section-->
+
+<header>
+  <nav>
+    <div class="header">
+      <a href="Work.html" id="logo">KEVINSUN.</a>
+    </div>
+    <div class="block_element">
+      <div class="inline-block"><span style="color:#FFB800">Work</span></div></a>
+      <a href="About.html"><div class="inline-block" id=underline>About</div></a>
+      
+      <a onClick="openTab(this)"href="#" name="img\Resume.docx (1).pdf">
+      
+      <div class="inline-block" id=underline>Resume</div></a>
+      
+      </a>
+    </div>
+  </nav>
+</header>
+
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Top Navigation Menu IF SMALL MENU -->
+<div class="topnav">
+  <a href="#home" class="active" id="logo">KEVINSUN.</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks" class="block_element">
+      <a><div class="inline-block"><span style="color:#FFB800">Work</span></div></a>
+      <a href="About.html"><div class="inline-block" id=underline2>About</div></a>
+      <a onClick="openTab(this)"href="#" name="img\Resume.docx (1).pdf">
+      
+        <div class="inline-block" id=underline2>Resume</div></a>
+        
+      </a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()" id="hamburger">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<br><br>
+
+<body>
+<!-- Portfolio - Hero Image Section-->
+
+<section class="justifyContent flexContainer_Work" id="row">
+  
+  <div class="flexItem_Work" id="Intro">
+    <div class="HeroContent">
+      <h1 class="Hi">Hi, I'm 
+      <span style="color:#FFB800">Kevin Sun.</span>
+      </h1>
+      <p class="Blurb">Kevin is a <span style="font-weight:600">UX/UI designer</span> who combines his empathy and creativity to problem solve through user-centric design.
+      </p>
+      <p class="Blurb">A recent graduate of the UC Berkeley UX/UI Bootcamp.</p>
+      <br>
+      
+      <a onClick="openTab(this)"href="#" name="img\Resume.docx (1).pdf">
+      <button>
+        <div class="buttonContain">
+          <div class="button Resume">RESUME</div>
+        </div>
+      </button>
+      </a>
+    </div>
+  </div>
+  <div class="flexItem_Work" id="ProfilePic">
+    <img src = "img\Yellow Rectangle.png"class="background"><img src = "img\IMG_5786.JPG" class="hero_Image">
+  </div>
+</section>
+
+<div class="gridChild arrow">
+  <img class="bounceMe" src="img/downArrow.png">
+</div>
+
+<br><br><br><br><br><br>
+
+<h2 class="Divider">Selected Works</h2>
+
+<!-- Work Section -->
+
+<section id="WorkGrid">
+  <div id="Project1" class="WorkGridArea">
+    <div class="margin">
+    <h3 class="projectHead">Big Brother Big Sisters Bay Area</h3>
+    <h4 class="projectSubhead">Non-Profit Website Redesign</h4>
+    <br>
+      <div id="headline">
+      <button>
+        <div class="buttonContain">
+          <div class="buttonView" >VIEW PROJECT</div>
+        </div>
+      </button>
+      </div>
+    </div>
+  </div>
+  <div id="Photo1" class="WorkGridArea">
+  </div>
+
+  <div id="Photo2" class="WorkGridArea">
+  </div>
+  <div id="Project2" class="WorkGridArea">
+    <div class="margin">
+      <h3 class="projectHead">Oregon Department of Motor Vehicles</h3>
+      <h4 class="projectSubhead">Government Website Redesign</h4>
+      <br>
+      <div id="headline">
+      <button>
+        <div class="buttonContain">
+          <div class="buttonView">VIEW PROJECT</div>
+        </div>
+      </button>
+      </div>
+    </div>
+  </div>
+  <div id="Project3" class="WorkGridArea">
+    <div class="margin">
+      <h3 class="projectHead">Solution to a Virtual Classroom</h3>
+      <h4 class="projectSubhead">Mobile App Case Study</h4>
+      <br>
+      <div id="headline">
+      <button>
+        <div class="buttonContain">
+          <div class="buttonView">VIEW PROJECT</div>
+        </div>
+      </button>
+      </div>
+    </div>
+  </div>
+  <div id="Photo3" class="WorkGridArea">
+  </div>
+</section>
+
+
+</body>
+
+
+
+<footer>
+  <p id="footerTagline">Interested in working together? Let's connect!</p>
+  <div class="block_element2">
+    <a href="https://www.linkedin.com/in/kevinwksun/"><img src = "img\LinkedIn.png" class="inline-block2"></a>
+    <!-- <img src = "img\Facebook.png" class="inline-block2"> -->
+    <a href="mailto:kevinwksun@gmail.com"><img src = "img\Email.png" class="inline-block2"></a>
+  </div>
+  <br><br>
+  <p id="copyright">(C) Kevin Sun 2020</p>
+</footer>
+
+ <!-- Add your preloader elements here -->
+ <div class="preloader">
+  <img src="img/Sun.png">
+</div>
+
+</html>

@@ -1,0 +1,535 @@
+body{
+    font-family: 'Roboto', sans-serif;}
+
+a:hover{
+    color: #FFB800;
+}
+
+#underline:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+#underline2:hover{
+    text-decoration: underline;
+    color: #FFB800;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+
+/* Header Styles */
+nav {
+    height: 5vh;
+    background-color: white;
+    padding-left:150px;
+    padding-right:150px;
+    padding-top:50px;
+}
+
+a{
+    color: black;
+}
+
+.inline-block{
+    display: inline-block;
+    padding: 15px;
+}
+
+.block_element{
+    font-size: 20px;
+    font-weight: 410;
+    float: right;
+    text-align: center;
+}
+
+#logo{
+    font-size: 30px;
+    font-weight: 600;
+    float: left;
+    padding: 15px;
+    width: 150px;
+}
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    display:none;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+    padding-left: 0px;
+    background-color: white;
+    border: 1px solid black;
+  }
+  
+  /* Style navigation menu links */
+.topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+.topnav a.icon {
+    background: #333;
+    display: block;
+    position: absolute;
+    right: 0;
+    align-items: center;
+    top: 0;
+    height: 100%;
+  }
+  
+  /* Add a grey background color on mouse-over */
+#logo:hover {
+    background-color: white;
+    color: #FFB800;
+  }
+
+#myLinks a:hover{
+    background-color: #333;
+    color: #FFB800;
+}
+
+.bounceMe {
+    height: 50px;
+    width: 50px;
+    animation: bounceArrow .7s infinite;
+    margin-bottom: 10px;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    z-index: 1;
+}
+
+@keyframes bounceArrow {
+    from {margin-bottom: 0px;
+  
+    }
+    50% {margin-bottom: 7px;
+  
+    }
+    to {margin-bottom: 0px;
+  
+    }
+  }
+
+/* Work */
+
+.HeroContent{
+    width: 375px;
+    text-align: left;
+    margin-left: auto;
+}
+
+.Hi{
+    font-size: 64px;
+    font-display: bold;
+}
+
+.Blurb{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.flexContainer_Work {
+    display: flex;
+    height: 70vh;
+    /* background-color: lightblue; */
+    margin: 10px;
+    padding: 10px;
+}
+
+.flexItem_Work {
+    /* background-color: lightyellow; */
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+    height: 500px;
+}
+
+#Intro{
+    padding-right: 40px;
+}
+
+.buttonContain{
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+    text-align: center;
+    color:black;
+    margin:10px;
+}
+
+/* Selected Works */
+
+.Divider{
+    /* padding-left:150px; */
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+#WorkGrid{
+    border-top: 1px solid rgb(184, 184, 184);
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 580px 580px 580px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "Project1 Project1 Photo1 Photo1 Photo1" 
+    "Photo2 Photo2 Photo2 Project2 Project2" 
+    "Project3 Project3 Photo3 Photo3 Photo3"
+    ;
+  }
+
+.WorkGridArea{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: 1px solid gray; */
+    /* cursor: pointer; */
+    display: grid;
+    align-content: center;
+}
+
+#Photo1{
+    grid-area: Photo1;
+    background-image: url(../img/Project\ 1-830x580.png);
+  }
+
+#Photo2{
+    grid-area: Photo2;
+    background-image: url(../img/Project\ 2-830x580.png);
+  }
+
+#Photo3{
+    grid-area: Photo3;
+    background-image: url(../img/Project\ 3-830x580.png);
+  }
+
+#Project1{
+    grid-area: Project1;
+    /* background-color: lightblue; */
+}
+
+#Project2{
+    grid-area: Project2;
+    /* background-color: lightblue;   */
+}
+
+#Project3{
+    grid-area: Project3;
+    /* background-color: lightblue;   */
+}
+
+.margin{
+    margin-left:25px;
+    margin-right: 25px;
+}
+
+h3{
+    font-size:36px;
+    font-weight: 400;
+    margin: 0;
+}
+
+h4{
+    font-size:30px;
+    font-weight: 100;
+    margin: 0;
+}
+
+#headline{
+    background-color: transparent;
+    position: relative;
+    top: 0px;
+    z-index: 1;
+    width: 200px;
+  }
+
+
+
+
+@media only screen and (max-width:1000px) {
+nav{
+    padding: 0px;
+}
+
+#logo{
+    font-size: 30px;
+    font-weight: 600;
+    float: none;
+    padding: 15px;
+}
+
+div.block_element{
+    font-size: 20px;
+    font-weight: 410;
+    float: none;
+    text-align: center;
+}
+
+div.header{
+    display: none;
+}
+
+div.block_element{
+    display: none;
+}
+
+div.topnav{
+    display: block;
+}
+
+
+
+#ProfilePic{
+    display: none;
+    z-index: 1;
+    position: absolute;
+}
+
+#WorkGrid{
+    grid-template-rows: 290px 290px 290px 290px 290px 290px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "Photo1"
+    "Project1" 
+    "Photo2"
+    "Project2" 
+    "Photo3"
+    "Project3"
+    ;
+}
+
+#hamburger{
+    top: 14px;
+}
+
+#hamburger:hover{
+    color: #FFB800;
+}
+
+}
+
+
+
+
+
+
+
+
+/* About */
+
+.background{
+    max-width:335px;
+    max-height:472px;
+    display: block;
+    margin-left: 0px;
+}
+
+.hero_Image{
+    width:335px;
+    height:472px;
+    display: block;
+    margin-top: -450px;
+    margin-left: 25px;
+    outline: 1px solid rgb(187, 187, 187);
+}
+
+.flexItem_About {
+    /* background-color: lightyellow; */
+    margin: 10px;
+    padding: 10px;
+    width: 370px;
+    height: 500px;
+}
+
+#ProfilePic{
+    padding-right: 40px;
+}
+
+#AboutMe{
+    padding-left: 40px;
+}
+
+.Hi{
+    font-size: 40px;
+    font-display: bold;
+    margin: 0px;
+    margin-top: 25px;
+}
+
+.UX{
+    margin:0px;
+}
+
+.flexContainer_About {
+    display: flex;
+    height: 600px;
+    /* background-color: lightblue; */
+    margin: 10px;
+    padding: 10px;
+}
+
+.justifyContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Skills */
+
+#categoryGrid{
+    margin: 0px 10%;
+    display: grid;
+    grid-template-rows:400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "UserResearch InteractionDesign WebDevelopment" 
+    ;
+}
+
+#userresearch{
+    grid-area: UserResearch;
+    background-image: url(../img/User\ Research.jpg);
+  }
+  
+#interaction{
+    grid-area: InteractionDesign;
+    background-image: url(../img/Interaction\ Design.jpg);
+  }
+  
+#webdevelopment{
+    grid-area: WebDevelopment;
+    background-image: url(../img/Web\ Development.jpg);
+  }
+
+.categoryGridArea{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 25px;
+    border: 1px solid gray;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+}
+
+.heading{
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+    height: 25px;
+    color: white;
+    font-size: 18px;
+    /* border-bottom: 5px solid #FFB800; */
+    text-align: center;
+}
+
+@media only screen and (max-width:1000px) {
+    #categoryGrid{
+        margin: 0px 10%;
+        display: grid;
+        grid-template-rows:300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "UserResearch"
+        "InteractionDesign"
+        "WebDevelopment" 
+        ;
+    }
+}
+
+/* footer */
+#footerTagline{
+    font-size: 20px;
+}
+
+#copyright{
+    font-size: 20px;
+    text-align: center;
+    padding: 0px;
+}
+
+footer{
+    background-color:#fafafa;
+    border-top: 1px solid rgb(224, 224, 224);
+    padding-left: 150px;
+    padding-right: 150px;
+    height: 175px;
+}
+
+.inline-block2{
+    display: inline-block;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+
+.block_element2{
+    height: 38px;
+    float: left;
+    text-align: center;
+}
+
+img{
+    max-width:100%;
+    max-height:100%;
+    display: block;
+}
+
+@media only screen and (max-width:1000px) {
+    footer{
+        background-color:#fafafa;
+        border-top: 1px solid rgb(224, 224, 224);
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #copyright{
+        font-size: 20px;
+        text-align: left;
+        padding-top: 10px;
+    }
+}
+
+/* @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-360deg);
+    }
+    100% {
+      transform: rotate(-720deg);
+    }
+  } */
+
+.preloader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+    background-color: white;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+  }
+  
+  .preloader img{
+    animation: spin 3s ease;
+    width: 300px;
+  }
